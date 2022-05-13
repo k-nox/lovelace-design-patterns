@@ -1,8 +1,8 @@
 import IQuoteApi from './IQuoteApi';
-import ZenQuotesApi from './ZenQuotesApi';
+import Dadaptor from './Dadaptor';
 
 export default class QuoteApiFactory {
     public static makeQuoteApi(): IQuoteApi {
-        return new ZenQuotesApi();
+        return new Dadaptor();
     }
 };
